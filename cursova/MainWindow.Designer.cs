@@ -28,20 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ShowAbitListButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // ShowAbitListButton
+            // 
+            this.ShowAbitListButton.Location = new System.Drawing.Point(12, 12);
+            this.ShowAbitListButton.Name = "ShowAbitListButton";
+            this.ShowAbitListButton.Size = new System.Drawing.Size(200, 40);
+            this.ShowAbitListButton.TabIndex = 0;
+            this.ShowAbitListButton.Text = "Показати список абітурієнтів";
+            this.ShowAbitListButton.UseVisualStyleBackColor = true;
+            this.ShowAbitListButton.Click += new System.EventHandler(this.ShowAbitListButton_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(12, 214);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(200, 40);
+            this.ExitButton.TabIndex = 1;
+            this.ExitButton.Text = "Вийти";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(288, 266);
+            this.ClientSize = new System.Drawing.Size(224, 266);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.ShowAbitListButton);
             this.Name = "MainWindow";
-            this.Text = "Main window";
+            this.Text = "Головне меню";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button ShowAbitListButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
 

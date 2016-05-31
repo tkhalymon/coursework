@@ -1,1 +1,13 @@
 c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\bin\Debug\cursova.exe.config
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\bin\Debug\cursova.exe
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\bin\Debug\cursova.pdb
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\bin\Debug\System.Data.SQLite.dll
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.csprojResolveAssemblyReference.cache
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.MainWindow.resources
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.Properties.Resources.resources
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.csproj.GenerateResource.Cache
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.exe
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.pdb
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.AddAbiturientWindow.resources
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.ShowAbiturientsWindow.resources
+c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.EditAbiturientWindow.resources

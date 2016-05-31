@@ -16,5 +16,19 @@ namespace cursova
         {
             InitializeComponent();
         }
+
+        private void ShowAbitListButton_Click(object sender, EventArgs e)
+        {
+            ShowAbiturientsWindow showAbitList = new ShowAbiturientsWindow();
+            showAbitList.ShowDialog();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ви дійсно хочете вийти з програми?", "Вихід", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Close();
+            }
+        }
     }
 }
