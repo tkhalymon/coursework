@@ -30,5 +30,10 @@ namespace cursova
                 Close();
             //}
         }
+
+        private void ShowRatingButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

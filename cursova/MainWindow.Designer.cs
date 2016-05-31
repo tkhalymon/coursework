@@ -30,6 +30,7 @@
         {
             this.ShowAbitListButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.ShowRatingButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ShowAbitListButton
@@ -52,11 +53,22 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // ShowRatingButton
+            // 
+            this.ShowRatingButton.Location = new System.Drawing.Point(12, 58);
+            this.ShowRatingButton.Name = "ShowRatingButton";
+            this.ShowRatingButton.Size = new System.Drawing.Size(200, 40);
+            this.ShowRatingButton.TabIndex = 2;
+            this.ShowRatingButton.Text = "Показати рейтинг абітурієнтів";
+            this.ShowRatingButton.UseVisualStyleBackColor = true;
+            this.ShowRatingButton.Click += new System.EventHandler(this.ShowRatingButton_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(224, 266);
+            this.Controls.Add(this.ShowRatingButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ShowAbitListButton);
             this.Name = "MainWindow";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button ShowAbitListButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button ShowRatingButton;
     }
 }
 

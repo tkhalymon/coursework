@@ -66,6 +66,7 @@
             this.ShowAbitListView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ShowAbitListView.Size = new System.Drawing.Size(317, 158);
             this.ShowAbitListView.TabIndex = 0;
+            this.ShowAbitListView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ShowAbitListView_CellContentClick);
             // 
             // id
             // 
@@ -156,7 +157,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ShowAbitListView;
+        public System.Windows.Forms.DataGridView ShowAbitListView;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button EditButton;
         private System.Windows.Forms.Button RemoveButton;

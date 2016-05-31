@@ -121,6 +121,7 @@
             this.Controls.Add(this.StaticLastnameText);
             this.Name = "EditAbiturientWindow";
             this.Text = "Редагування абітурієнта";
+            this.Load += new System.EventHandler(this.EditAbiturientWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
