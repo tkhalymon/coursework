@@ -11,3 +11,4 @@ c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug
 c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.AddAbiturientWindow.resources
 c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.ShowAbiturientsWindow.resources
 c:\users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.EditAbiturientWindow.resources
+C:\Users\win7-vm\documents\visual studio 2012\Projects\cursova\cursova\obj\Debug\cursova.ShowRatingWindow.resources

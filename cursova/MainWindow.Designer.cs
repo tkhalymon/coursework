@@ -45,7 +45,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(12, 214);
+            this.ExitButton.Location = new System.Drawing.Point(12, 104);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(200, 40);
             this.ExitButton.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 266);
+            this.ClientSize = new System.Drawing.Size(224, 156);
             this.Controls.Add(this.ShowRatingButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ShowAbitListButton);

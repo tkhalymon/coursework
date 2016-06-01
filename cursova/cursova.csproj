@@ -73,6 +73,12 @@
     <Compile Include="ShowAbiturientsWindow.Designer.cs">
       <DependentUpon>ShowAbiturientsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowRatingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowRatingWindow.Designer.cs">
+      <DependentUpon>ShowRatingWindow.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAbiturientWindow.resx">
       <DependentUpon>AddAbiturientWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="ShowAbiturientsWindow.resx">
       <DependentUpon>ShowAbiturientsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowRatingWindow.resx">
+      <DependentUpon>ShowRatingWindow.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

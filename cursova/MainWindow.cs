@@ -33,7 +33,8 @@ namespace cursova
 
         private void ShowRatingButton_Click(object sender, EventArgs e)
         {
-            
+            ShowRatingWindow showRatingWindow = new ShowRatingWindow();
+            showRatingWindow.ShowDialog();
         }
     }
 }

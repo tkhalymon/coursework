@@ -24,9 +24,17 @@ namespace cursova
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection = new SQLiteConnection(connectionString);
             connection.Open();
-            string query = "INSERT INTO abiturients (name, surname, lastname) VALUES ('"
-                + LastnameBox.Text + "', '" + NameBox.Text + "', '" + SurnameBox.Text + "')";
+            string query = @"INSERT INTO abiturients (lastname, name, surname, rating, exam, additional) VALUES
+            (@lastname, @name, @surname, @rating, @exam, @additional)";
             SQLiteCommand command = new SQLiteCommand(query, connection);
+            command.Parameters.Add(new SQLiteParameter("@lastname", LastnameBox.Text));
+            command.Parameters.Add(new SQLiteParameter("@name", NameBox.Text));
+            command.Parameters.Add(new SQLiteParameter("@surname", SurnameBox.Text));
+            Random r = new Random();
+            command.Parameters.Add(new SQLiteParameter("@rating", r.Next(20) + 40));
+            command.Parameters.Add(new SQLiteParameter("@exam", r.Next(20) + 10));
+            command.Parameters.Add(new SQLiteParameter("@additional", r.Next(10)));
+            
             command.ExecuteNonQuery();
             connection.Close();
             Close();

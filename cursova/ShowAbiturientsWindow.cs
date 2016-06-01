@@ -24,13 +24,11 @@ namespace cursova
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection = new SQLiteConnection(connectionString);
             connection.Open();
-            string query = @"CREATE TABLE abiturients
-            (
-            	row_id int primary key autoincrement not null,
-            	 varchar(50) not null,
-            	surname varchar(50) not null,
-            	lastname varchar(50) not null
-            )";
+            //string query = @"ALTER TABLE abiturients
+            //	ADD rating int not null DEFAULT 0,
+            //	ADD exam int not null DEFAULT 0,
+            //	ADD additional int not null DEFAULT 0
+            //";
             string query = "SELECT * FROM abiturients";
             //string query = "INSERT INTO abiturients (name, surname, lastname) VALUES ('a', 'b', 'c')";
             SQLiteCommand command = new SQLiteCommand(query, connection);
