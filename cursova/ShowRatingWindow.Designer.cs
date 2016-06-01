@@ -42,6 +42,7 @@
             // 
             this.AbiturientsRatingView.AllowUserToAddRows = false;
             this.AbiturientsRatingView.AllowUserToDeleteRows = false;
+            this.AbiturientsRatingView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.AbiturientsRatingView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.AbiturientsRatingView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
