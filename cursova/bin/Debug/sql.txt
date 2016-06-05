@@ -1,0 +1,36 @@
+CREATE TABLE abiturients
+(
+	id integer primary key autoincrement not null,
+	lastname varchar (50) not null,
+	name varchar (50) not null,
+	surname varchar (50) not null
+);
+CREATE TABLE subjects
+(
+	subj_id integer primary key autoincrement not null,
+	subj_name varchar(200) not null
+);
+CREATE TABLE exams
+(
+	exam_id integer primary key autoincrement not null,
+	exam_name varchar (200) not null
+);
+CREATE TABLE rating
+(
+	id integer not null,
+	subj_id integer not null,
+	semester integer not null,
+	mark integer not null
+);
+CREATE TABLE exam_marks
+(
+	id integer not null,
+	exam_id integer not null,
+	mark integer not null
+);
+CREATE TABLE additional_work
+(
+	id integer not null,
+	work_name text not null,
+	mark integer not null
+);

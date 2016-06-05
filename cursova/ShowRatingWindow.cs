@@ -20,7 +20,7 @@ namespace cursova
 
         private void ShowRatingWindow_Load(object sender, EventArgs e)
         {
-            var connectionString = @"data source=database.sqlite; Version=3;";
+            var connectionString = @"data source=database.sqlite3; Version=3;";
             SQLiteConnection connection = new SQLiteConnection(connectionString);
             connection = new SQLiteConnection(connectionString);
             connection.Open();

@@ -1,0 +1,13 @@
+CREATE TABLE abiturients
+
+(
+
+id integer primary key autoincrement not null,
+
+lastname varchar (50) not null,
+
+name varchar (50) not null,
+
+surname varchar (50) not null
+
+);
