@@ -1,0 +1,52 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE abiturients
+(
+	id integer primary key autoincrement not null,
+	lastname varchar (50) not null,
+	name varchar (50) not null,
+	surname varchar (50) not null
+);
+INSERT INTO "abiturients" VALUES(1,'Халимон','Тарас','Юрійович');
+CREATE TABLE subjects
+(
+	subj_id integer primary key autoincrement not null,
+	subj_name varchar(200) not null
+);
+INSERT INTO "subjects" VALUES(1,'Вища математика');
+INSERT INTO "subjects" VALUES(7,'Фізика');
+INSERT INTO "subjects" VALUES(8,'Теорія імовірності');
+INSERT INTO "subjects" VALUES(9,'Програмування');
+CREATE TABLE exams
+(
+	exam_id integer primary key autoincrement not null,
+	exam_name varchar (200) not null
+);
+INSERT INTO "exams" VALUES(1,'Англійська мова');
+CREATE TABLE rating
+(
+	id integer not null,
+	subj_id integer not null,
+	semester integer not null,
+	mark integer not null
+);
+INSERT INTO "rating" VALUES(1,1,1,75);
+CREATE TABLE exam_marks
+(
+	id integer not null,
+	exam_id integer not null,
+	mark integer not null
+);
+CREATE TABLE additional_work
+(
+	id integer not null,
+	work_name text not null,
+	mark integer not null
+);
+INSERT INTO "additional_work" VALUES(1,'Conference',10);
+INSERT INTO "additional_work" VALUES(1,'Competition',5);
+DELETE FROM sqlite_sequence;
+INSERT INTO "sqlite_sequence" VALUES('abiturients',1);
+INSERT INTO "sqlite_sequence" VALUES('subjects',9);
+INSERT INTO "sqlite_sequence" VALUES('exams',1);
+COMMIT;

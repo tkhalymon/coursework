@@ -23,18 +23,29 @@ namespace cursova
             showAbitList.ShowDialog();
         }
 
-        private void ExitButton_Click(object sender, EventArgs e)
+        private void ShowSubjectsButton_Click(object sender, EventArgs e)
         {
-            //if (MessageBox.Show("Ви дійсно хочете вийти з програми?", "Вихід", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            //{
-                Close();
-            //}
+            ShowSubjectsWindow showSubjectsWindow = new ShowSubjectsWindow();
+            showSubjectsWindow.ShowDialog();
         }
 
         private void ShowRatingButton_Click(object sender, EventArgs e)
         {
             ShowRatingWindow showRatingWindow = new ShowRatingWindow();
             showRatingWindow.ShowDialog();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Ви дійсно хочете вийти з програми?", "Вихід", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Close();
+            }
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
